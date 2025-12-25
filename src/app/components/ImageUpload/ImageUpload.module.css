@@ -1,0 +1,14 @@
+.image__upload>input {
+    display: none;
+  }
+  .image__upload img{
+      max-width: 100%;
+  }
+  .image__upload label{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 30px auto;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }

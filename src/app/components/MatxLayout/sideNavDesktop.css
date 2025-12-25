@@ -1,0 +1,91 @@
+:root {
+    --whiteColor: #fff;
+    --blackColor: #000;
+    --yellowColor: #ffbe2f;
+    --subMenuBGColor: #363636;
+    --hoverBGColor: #f7e5be;
+    --borderColor: #616161;
+}
+
+#sideNavDesktop .adminIcon {
+  position: relative;
+  top:-2px;
+}
+#sideNavDesktop > div {
+  background-color: var(--whiteColor);
+}
+#sideNavDesktop img {
+  color: var(--blackColor);
+}
+#sideNavDesktop .navigation a {
+  color: var(--blackColor);
+}
+#sideNavDesktop .navigation a:hover,
+#sideNavDesktop .navigation a:active,
+#sideNavDesktop .navigation a[class*="makeStyles-navItemActive"],
+#sideNavDesktop .compactNavItem:hover,
+#sideNavDesktop .compactNavItem.open {
+  background-color: var(--hoverBGColor);
+}
+#sideNavDesktop .navLabel {
+  color: var(--subMenuBGColor);
+  padding: 0 36px;
+}
+#sideNavDesktop .compactNavItem {
+  transition: all 0.2s ease-in-out;
+  color: var(--blackColor);
+  padding: 0 20px;
+}
+#sideNavDesktop .submenu .compactNavItem{
+  color: var(--whiteColor);
+}
+#sideNavDesktop .submenu .compactNavItem .adminIcon {
+  fill: var(--whiteColor);
+  transition: all .2s ease-in-out;
+}
+#sideNavDesktop .submenu .compactNavItem:hover .adminIcon,
+#sideNavDesktop .submenu .compactNavItem.open .adminIcon  {
+  fill: var(--blackColor)
+}
+#sideNavDesktop .submenu .compactNavItem:hover,
+#sideNavDesktop .submenu .compactNavItem.open {
+  color: var(--blackColor);
+}
+#sideNavDesktop .submenu {
+  background-color: var(--subMenuBGColor);
+}
+#sideNavDesktop .submenu a {
+  border-bottom: 1px solid var(--borderColor);
+}
+#sideNavDesktop .submenu a:hover,
+#sideNavDesktop .submenu a:active,
+#sideNavDesktop .submenu a[class*="makeStyles-navItemActive"] {
+  background-color: var(--yellowColor);
+  border-bottom: 1px solid #a3a3a3;
+}
+#sideNavDesktop .submenu a:hover .nav-bullet,
+#sideNavDesktop .submenu a[class*="makeStyles-navItemActive"] .nav-bullet {
+  background-color: var(--blackColor);
+}
+
+#sideNavDesktop .submenu a:hover button > .sidenavHoverShow,
+#sideNavDesktop .submenu a:active button > .sidenavHoverShow,
+#sideNavDesktop .submenu a[class*="makeStyles-navItemActive"] button > .sidenavHoverShow {
+  color: var(--blackColor);
+}
+
+#sideNavDesktop .submenu a button > .sidenavHoverShow {
+  color: var(--whiteColor);
+}
+
+/* for switching */
+
+#sideNavDesktop .Mui-checked + [class^="MuiSwitch-track"] {
+  background-color: var(--yellowColor);
+}
+#sideNavDesktop [class^="MuiSwitch-track"] {
+  background-color: var(--subMenuBGColor);
+}
+#sideNavDesktop [class^="MuiSwitch-thumb"] {
+  background-color: var(--blackColor);
+}
